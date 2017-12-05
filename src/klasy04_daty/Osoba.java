@@ -1,4 +1,4 @@
-package klasy;
+package klasy04_daty;
 
 import java.time.LocalDate;
 import java.time.Period;

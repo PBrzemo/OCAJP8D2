@@ -54,6 +54,10 @@ public class Osoba {
 //    	System.out.println("okres: " + okres);
     	return okres.getYears();
     }
+    
+    String kimJestes() {
+    		return "jestem osoba";
+    }
    
 }
 

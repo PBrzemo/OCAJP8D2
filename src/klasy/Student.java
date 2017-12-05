@@ -42,6 +42,9 @@ public class Student extends Osoba {
 		}
     	return sumaOcen/oceny.size(); 
     }
+    String kimJestes() {
+		return "jestem studentem "+ kierunek;
+}
 }
 
 

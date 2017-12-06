@@ -11,6 +11,7 @@ public class Konto {
 		this.wlasciciel = wlasciciel;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "Konto [numer=" + numer + ", saldo=" + saldo + ", wlasciciel=" + wlasciciel + "]";

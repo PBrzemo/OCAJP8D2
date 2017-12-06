@@ -1,4 +1,4 @@
-package abstrakcyjne;
+package abstrakcyjne1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,9 +22,9 @@ public class ObslugaCSV {
         }
     }
 
-    public static void zapisz2(Collection<? extends Wypisywalny> osoby, File plik) {        
+    public static void zapisz(Collection<? extends Wypisywalny> osoby, File plik) {        
         try(PrintWriter out = new PrintWriter(plik)) {
-            for(Wypisywalny osoba : osoby) {		
+            for(Wypisywalny osoba : osoby) {
                 String wiersz = osoba.pola().stream()
                         .collect(Collectors.joining(";"));
                 out.println(wiersz);
@@ -33,17 +33,7 @@ public class ObslugaCSV {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-    }
-        public static void zapisz(Collection<? extends Wypisywalny> osoby, File plik) {        
-            try(PrintWriter out = new PrintWriter(plik)) {
-                for(Wypisywalny rekord : osoby) {
-                    out.println(rekord.wiersz());
-                    
-                }
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-
+        
     }
 }
 

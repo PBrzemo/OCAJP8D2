@@ -1,4 +1,4 @@
-package klasy;
+package klasy05;
 
 public class Przyklad5 {
 

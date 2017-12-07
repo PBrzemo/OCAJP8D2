@@ -9,7 +9,7 @@ public class Przyklad1 {
         System.out.println(konto);
         
         // wplata można wywoływać bez obsługi wyjątków,
-        // bo IllegaArgumentException jest unchecked
+        // bo IllegalArgumentException jest unchecked
         konto.wplata(500);
         System.out.println("Udało się wplacic 500");
         System.out.println(konto);
